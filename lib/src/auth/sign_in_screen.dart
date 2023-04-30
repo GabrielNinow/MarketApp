@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:market/src/config/custom_colors.dart';
 import './components/custom_text_field.dart';
 
 class SignInScreen extends StatelessWidget {
@@ -7,7 +8,7 @@ class SignInScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: CustomColors.customSwatchColor,
       body: Column(
         children: [
           const Expanded(
