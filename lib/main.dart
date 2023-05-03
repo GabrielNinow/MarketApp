@@ -14,6 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'market',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.green),
+        scaffoldBackgroundColor: Colors.white.withAlpha(190),
         useMaterial3: true,
       ),
       debugShowCheckedModeBanner: false,

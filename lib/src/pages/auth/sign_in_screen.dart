@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/src/auth/sing_up_screen.dart';
-import 'package:market/src/base/base_screen.dart';
+import 'package:market/src/pages/auth/sing_up_screen.dart';
+import 'package:market/src/pages/base/base_screen.dart';
 import 'package:market/src/config/custom_colors.dart';
 import './components/custom_text_field.dart';
 
