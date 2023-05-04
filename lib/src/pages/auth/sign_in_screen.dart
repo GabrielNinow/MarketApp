@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:market/src/auth/sing_up_screen.dart';
+import 'package:market/src/pages/auth/sing_up_screen.dart';
+import 'package:market/src/pages/base/base_screen.dart';
 import 'package:market/src/config/custom_colors.dart';
 import './components/custom_text_field.dart';
 
@@ -56,7 +57,12 @@ class SignInScreen extends StatelessWidget {
                     style: ElevatedButton.styleFrom(
                         shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(18))),
-                    onPressed: () {},
+                    onPressed: () {
+                      Navigator.of(context)
+                          .pushReplacement(MaterialPageRoute(builder: (c) {
+                        return BaseScreen();
+                      }));
+                    },
                     child: const Text(
                       'Entrar',
                       style: TextStyle(
@@ -110,7 +116,7 @@ class SignInScreen extends StatelessWidget {
                     onPressed: () {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (c) {
-                        return SignUpScreen();
+                        return const SignUpScreen();
                       }));
                     },
                     child: const Text(
